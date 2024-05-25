@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Configs/Theme.dart';
-import 'package:portfolio/Pages/HomePage/HomePage.dart';
+import 'package:portfolio/Pages/Mobile/HomePage/HomePage.dart';
+import 'package:portfolio/View/HomePage/HomePageView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Nitish Kumar',
       theme: darkTheme,
-      home: HomePage(),
+      home: HomePageView(),
     );
   }
 }
