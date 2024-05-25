@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/Widgets/AppBar/CustomAppBat.dart';
 
 class HomePageWeb extends StatelessWidget {
   const HomePageWeb({super.key});
@@ -6,9 +7,13 @@ class HomePageWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("Desktop View"),
+        body: Padding(
+      padding: const EdgeInsets.all(30),
+      child: Column(
+        children: [
+          CustomAppBar(),
+        ],
       ),
-    );
+    ));
   }
 }
