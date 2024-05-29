@@ -2,6 +2,9 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:portfolio/Widgets/HoverWidget.dart';
+import 'package:portfolio/Widgets/Mobile/AppBar/AppBar.dart';
+import 'package:portfolio/Widgets/Mobile/InfoSection/InfoSection.dart';
+import 'package:portfolio/Widgets/Mobile/MyServices/MyServicesSection.dart';
 
 class HomePageMobile extends StatelessWidget {
   const HomePageMobile({super.key});
@@ -9,8 +12,17 @@ class HomePageMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: Text("Mobiler View"),
-    ));
+      body: ListView(
+        children: [
+          SizedBox(height: 20),
+          MobileCustomAppBar(),
+          MobileInfoSection(),
+          SizedBox(
+            height: 20,
+          ),
+          MobileMyServicesSec(),
+        ],
+      ),
+    );
   }
 }
