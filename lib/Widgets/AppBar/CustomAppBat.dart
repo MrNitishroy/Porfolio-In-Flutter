@@ -6,13 +6,18 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 100),
+      padding: const EdgeInsets.symmetric(horizontal: 200),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
             "NI30",
             style: Theme.of(context).textTheme.headlineMedium,
-          )
+          ),
+          Text(
+            "Kumar",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
         ],
       ),
     );

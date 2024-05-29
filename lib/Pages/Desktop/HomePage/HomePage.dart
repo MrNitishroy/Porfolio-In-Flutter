@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Widgets/AppBar/CustomAppBat.dart';
+import 'package:portfolio/Widgets/Info/InfoSection.dart';
 
 class HomePageWeb extends StatelessWidget {
   const HomePageWeb({super.key});
@@ -12,6 +13,8 @@ class HomePageWeb extends StatelessWidget {
       child: Column(
         children: [
           CustomAppBar(),
+          SizedBox(height: 30),
+          InfoSection(),
         ],
       ),
     ));
