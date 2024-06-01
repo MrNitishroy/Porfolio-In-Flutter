@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/Widgets/Desktop/AppBar/CustomAppBat.dart';
+import 'package:portfolio/Widgets/Desktop/Footer/FooterSection.dart';
 import 'package:portfolio/Widgets/Desktop/Info/InfoSection.dart';
 import 'package:portfolio/Widgets/Desktop/Knowledge/KnowledgeSection.dart';
 import 'package:portfolio/Widgets/Desktop/Knowledge/TechnocalKnowledge.dart';
 import 'package:portfolio/Widgets/Desktop/MyServices/MyServicesSection.dart';
 import 'package:portfolio/Widgets/Desktop/SkilSection/SkillSection.dart';
+
+import '../../../Widgets/Desktop/Experience/ExperienceSection.dart';
 
 class HomePageWeb extends StatelessWidget {
   const HomePageWeb({super.key});
@@ -14,15 +17,18 @@ class HomePageWeb extends StatelessWidget {
     return Scaffold(
         body: ListView(
       children: [
-        // CustomAppBar(),
-        // SizedBox(height: 30),
-        // InfoSection(),
-        // SizedBox(height: 30),
-        // MyServiceSection(),
-        // SizedBox(height: 30),
-        // SkillSection(),
-        // SizedBox(height: 30),
-        KnowledgeSection()
+        CustomAppBar(),
+        SizedBox(height: 30),
+        InfoSection(),
+        SizedBox(height: 30),
+        MyServiceSection(),
+        SizedBox(height: 30),
+        SkillSection(),
+        SizedBox(height: 30),
+        KnowledgeSection(),
+        SizedBox(height: 30),
+        ExperienceSection(),
+        FooterSection(),
       ],
     ));
   }
