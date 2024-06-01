@@ -18,12 +18,15 @@ class SkillSection extends StatelessWidget {
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           SizedBox(height: 50),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Expanded(child: ProgramingSkill()),
               SizedBox(width: 20),
-              HorizontalDivider(height: 600),
+              HorizontalDivider(
+                height: 600,
+                color: Theme.of(context).colorScheme.primaryContainer,
+              ),
               SizedBox(width: 20),
               Expanded(child: SoftwareSkill()),
             ],
