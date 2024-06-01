@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Nitish Kumar',
       theme: darkTheme,
-      home: const WebPointer(
+      home:  WebPointer(
         circleDuration: 1,
         circleColor: Color(0xff00DA64),
         roundColor: Color(0xff00DA64),
